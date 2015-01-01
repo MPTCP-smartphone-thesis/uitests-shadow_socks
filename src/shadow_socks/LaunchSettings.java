@@ -60,8 +60,11 @@ public class LaunchSettings extends UiAutomatorTestCase {
 	}
 
 	public void testDemo() throws UiObjectNotFoundException {
-		assertTrue("OOOOOpps", Utils.openApp(this, "Shadowsocks",
-				"com.github.shadowsocks", false)); // not kill it before
+		assertTrue("OOOOOpps",
+				Utils.openApp(this, "Shadowsocks",
+						"com.github.shadowsocks",
+						"com.github.shadowsocks.Shadowsocks",
+						false)); // not kill it before
 		sleep(1000);
 		// Utils.listMoveUp(ID_LISTVIEW); autoconnect is the last elem
 
