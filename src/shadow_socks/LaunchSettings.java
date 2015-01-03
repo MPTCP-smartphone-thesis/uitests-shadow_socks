@@ -51,7 +51,7 @@ public class LaunchSettings extends UiAutomatorTestCase {
 			stopProxy(button);
 
 		UiObject checkBox = Utils.findCheckBoxInListWithTitle(ID_LISTVIEW,
-				TEXT_AUTO_CONNECT);
+				TEXT_AUTO_CONNECT, null);
 		assertTrue("Unable to find element", checkBox != null);
 		Utils.checkBox(checkBox, enable);
 
